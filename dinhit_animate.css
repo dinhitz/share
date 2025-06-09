@@ -1,0 +1,168 @@
+/* Base classes */
+[class*="fade-"],
+[class*="slide-"],
+[class*="zoom-"],
+[class*="flip-"] {
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-timing-function: ease;
+    will-change: transform, opacity;
+}
+
+.animate {
+    opacity: 1;
+}
+
+/* Fade Effects */
+.fade-up {
+    transform: translateY(20px);
+}
+
+.fade-up.animate {
+    transform: translateY(0);
+}
+
+.fade-down {
+    transform: translateY(-20px);
+}
+
+.fade-down.animate {
+    transform: translateY(0);
+}
+
+.fade-left {
+    transform: translateX(-20px);
+}
+
+.fade-left.animate {
+    transform: translateX(0);
+}
+
+.fade-right {
+    transform: translateX(20px);
+}
+
+.fade-right.animate {
+    transform: translateX(0);
+}
+
+/* Slide Effects */
+.slide-up {
+    transform: translateY(100%);
+}
+
+.slide-up.animate {
+    transform: translateY(0);
+}
+
+.slide-down {
+    transform: translateY(-100%);
+}
+
+.slide-down.animate {
+    transform: translateY(0);
+}
+
+.slide-left {
+    transform: translateX(-100%);
+}
+
+.slide-left.animate {
+    transform: translateX(0);
+}
+
+.slide-right {
+    transform: translateX(100%);
+}
+
+.slide-right.animate {
+    transform: translateX(0);
+}
+
+/* Zoom Effects */
+.zoom-in {
+    transform: scale(0.8);
+}
+
+.zoom-in.animate {
+    transform: scale(1);
+}
+
+.zoom-out {
+    transform: scale(1.2);
+}
+
+.zoom-out.animate {
+    transform: scale(1);
+}
+
+/* Flip Effects */
+.flip-left {
+    transform: rotateY(90deg);
+}
+
+.flip-left.animate {
+    transform: rotateY(0);
+}
+
+.flip-right {
+    transform: rotateY(-90deg);
+}
+
+.flip-right.animate {
+    transform: rotateY(0);
+}
+
+.flip-up {
+    transform: rotateX(-90deg);
+}
+
+.flip-up.animate {
+    transform: rotateX(0);
+}
+
+.flip-down {
+    transform: rotateX(90deg);
+}
+
+.flip-down.animate {
+    transform: rotateX(0);
+}
+
+/* Delay Utility */
+.delay-100 {
+    transition-delay: 0.1s;
+}
+
+.delay-200 {
+    transition-delay: 0.2s;
+}
+
+.delay-300 {
+    transition-delay: 0.3s;
+}
+
+.delay-400 {
+    transition-delay: 0.4s;
+}
+
+.delay-500 {
+    transition-delay: 0.5s;
+}
+
+/* Duration Utility */
+.duration-400 {
+    transition-duration: 0.4s;
+}
+
+.duration-600 {
+    transition-duration: 0.6s;
+}
+
+.duration-800 {
+    transition-duration: 0.8s;
+}
+
+.duration-1000 {
+    transition-duration: 1s;
+}
