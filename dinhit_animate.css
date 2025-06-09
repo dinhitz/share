@@ -3,7 +3,7 @@
 [class*="slide-"],
 [class*="zoom-"],
 [class*="flip-"] {
-    /* opacity: 0; */
+    /*opacity: 0;*/
     transition-property: opacity, transform;
     transition-timing-function: ease;
     will-change: transform, opacity;
